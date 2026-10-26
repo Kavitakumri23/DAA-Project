@@ -1,0 +1,37 @@
+{
+    "routers": [
+        {"id": "R1", "name": "Delhi Router"},
+        {"id": "R2", "name": "Mumbai Router"},
+        {"id": "R3", "name": "Jaipur Router"},
+        {"id": "R4", "name": "Pune Router"},
+        {"id": "R5", "name": "Bengaluru Router"},
+        {"id": "R6", "name": "Hyderabad Router"},
+        {"id": "R7", "name": "Chennai Router"},
+        {"id": "R8", "name": "Kolkata Router"}
+    ],
+
+    "connections": [
+        {"router1": "R1", "router2": "R2", "latency": 4},
+        {"router1": "R1", "router2": "R3", "latency": 2},
+        {"router1": "R2", "router2": "R3", "latency": 1},
+        {"router1": "R2", "router2": "R4", "latency": 5},
+        {"router1": "R3", "router2": "R4", "latency": 8},
+        {"router1": "R3", "router2": "R5", "latency": 10},
+        {"router1": "R4", "router2": "R5", "latency": 2},
+        {"router1": "R4", "router2": "R6", "latency": 3},
+        {"router1": "R5", "router2": "R6", "latency": 1},
+        {"router1": "R5", "router2": "R7", "latency": 6},
+        {"router1": "R6", "router2": "R7", "latency": 2},
+        {"router1": "R6", "router2": "R8", "latency": 7},
+        {"router1": "R7", "router2": "R8", "latency": 3},
+        {"router1": "R2", "router2": "R8", "latency": 12}
+    ],
+
+    "requests": [
+        {"id": 1, "source": "R1", "destination": "R8"},
+        {"id": 2, "source": "R2", "destination": "R7"},
+        {"id": 3, "source": "R3", "destination": "R6"},
+        {"id": 4, "source": "R1", "destination": "R5"},
+        {"id": 5, "source": "R4", "destination": "R8"}
+    ]
+}

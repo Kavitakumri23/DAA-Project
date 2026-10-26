@@ -1,0 +1,21 @@
+{
+    "routers": [
+        {"id": "A", "name": "Router A"},
+        {"id": "B", "name": "Router B"},
+        {"id": "C", "name": "Router C"},
+        {"id": "D", "name": "Router D"}
+    ],
+
+    "connections": [
+        {"router1": "A", "router2": "B", "latency": 4},
+        {"router1": "A", "router2": "C", "latency": 2},
+        {"router1": "C", "router2": "B", "latency": 1},
+        {"router1": "B", "router2": "D", "latency": 5},
+        {"router1": "C", "router2": "D", "latency": 8}
+    ],
+
+    "requests": [
+        {"id": 1, "source": "A", "destination": "D"},
+        {"id": 2, "source": "B", "destination": "C"}
+    ]
+}
